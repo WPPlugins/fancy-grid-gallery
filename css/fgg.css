@@ -1,0 +1,396 @@
+.fancy-grid-gallery-wrap {
+    /*margin: 5px 0;*/
+}
+.wcp-prefix .mixi {
+    display: none;
+}
+.fancy-grid-gallery-wrap .image-caption-box {   
+    cursor: pointer;
+    position: relative;  
+    overflow: visible;
+    width: 100%;
+    /*border: 5px solid #eee;*/
+}
+.centered-text {
+    display: table-cell !important;
+    vertical-align: middle !important;    
+}
+.fancy-grid-gallery-wrap .image-caption-box img {  
+    position: relative;
+    -webkit-transition: all 1s ease-out;  
+    -moz-transition: all 1s ease-out;  
+    -o-transition: all 1s ease-out;  
+    -ms-transition: all 1s ease-out;  
+    transition: all 1s ease-out;
+    max-width: 100% !important;
+    vertical-align: -webkit-baseline-middle;
+    display: block;
+} 
+
+.fancy-grid-gallery-wrap .image-caption-box .caption {  
+    background-color: rgba(0,0,0,0.5);  
+    position: absolute;  
+    color: #fff;  
+    z-index: 100;  
+    -webkit-transition: all 1s ease-out;  
+    -moz-transition: all 1s ease-out;  
+    -o-transition: all 1s ease-out;  
+    -ms-transition: all 1s ease-out;  
+    transition: all 1s ease-out;  
+    width: 100%;
+    height: 100%;
+} 
+.fancy-grid-gallery-wrap .image-caption-box .captionna {  
+    pointer-events: none !important;
+} 
+
+.fancy-grid-gallery-wrap .image-caption-box .no-effect {  
+    display: block;  
+    top: 0;
+    visibility: hidden;
+    -webkit-transition: none;
+    transition: none;
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .no-effect {  
+    visibility: visible;   
+} 
+
+
+.fancy-grid-gallery-wrap .image-caption-box .simple-fade {  
+    display: block;  
+    top: 0;
+    opacity: 0 !important;
+    -webkit-transition: 1s all;
+    transition: 1s all;
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .simple-fade {  
+    opacity: 1 !important;
+} 
+.fancy-grid-gallery-wrap .image-caption-box .zoom-in {  
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0
+}
+
+.fancy-grid-gallery-wrap .image-caption-box .zoom-in ~ img {
+    display: block;
+    z-index: 0;
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .zoom-in {  
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1
+}
+
+/* ----------------------- Image Caption Hover Styles PRO ----------------------- */
+
+.fancy-grid-gallery-wrap .image-caption-box .zoom-out {  
+    -webkit-transform: scale(5);
+    -ms-transform: scale(5);
+    transform: scale(5);
+    opacity: 0
+}
+
+.fancy-grid-gallery-wrap .image-caption-box .zoom-out ~ img {
+    display: block;
+    z-index: 0;
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .zoom-out {  
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1
+}
+
+/* ----------------------- Image Caption Hover Styles PRO ----------------------- */
+
+.fancy-grid-gallery-wrap .image-caption-box .zoom-in-twist {
+    -webkit-transform: scale(0) rotateZ(-720deg);
+    transform: scale(0) rotateZ(-720deg);
+    opacity: 0    
+}
+
+.fancy-grid-gallery-wrap .image-caption-box .zoom-in-twist ~ img {
+    display: block;
+    z-index: 0;
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .zoom-in-twist {  
+    -webkit-transform: scale(1) rotateZ(0);
+    -ms-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+    opacity: 1
+}
+
+/* ----------------------- Image Caption Hover Styles PRO ----------------------- */
+
+.fancy-grid-gallery-wrap .image-caption-box .zoom-out-twist {
+    -webkit-transform: scale(5) rotateZ(720deg);
+    transform: scale(5) rotateZ(720deg);
+    opacity: 0
+}
+
+.fancy-grid-gallery-wrap .image-caption-box .zoom-out-twist ~ img {
+    display: block;
+    z-index: 0;
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .zoom-out-twist {  
+    -webkit-transform: scale(1) rotateZ(0);
+    -ms-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+    opacity: 1;
+}
+
+/* ----------------------- Image Caption Hover Styles PRO ----------------------- */
+
+.fancy-grid-gallery-wrap .image-caption-box .zoom-caption-in-image-out {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+}
+
+.fancy-grid-gallery-wrap .image-caption-box .zoom-caption-in-image-out ~ img {
+    display: block;
+    z-index: 0;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);    
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .zoom-caption-in-image-out {  
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .zoom-caption-in-image-out ~ img {  
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+}
+
+/* ----------------------- Image Caption Hover Styles PRO ----------------------- */
+
+.fancy-grid-gallery-wrap .image-caption-box .zoom-caption-out-image-in {
+    -webkit-transform: scale(5);
+    -ms-transform: scale(5);
+    transform: scale(5);
+    opacity: 0;
+}
+
+.fancy-grid-gallery-wrap .image-caption-box .zoom-caption-out-image-in ~ img {
+    display: block;
+    z-index: 0;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);   
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .zoom-caption-out-image-in {  
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .zoom-caption-out-image-in ~ img {  
+    -webkit-transform: scale(5);
+    -ms-transform: scale(5);
+    transform: scale(5);
+    opacity: 0;
+}
+
+/* ----------------------- Image Caption Hover Styles PRO ----------------------- */
+
+.fancy-grid-gallery-wrap .image-caption-box .zoom-image-out-caption-twist {
+    -webkit-transform: scale(0) rotateZ(-720deg);
+    transform: scale(0) rotateZ(-720deg);
+    opacity: 0;   
+}
+
+.fancy-grid-gallery-wrap .image-caption-box .zoom-image-out-caption-twist ~ img {
+    display: block;
+    z-index: 0;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .zoom-image-out-caption-twist {  
+    -webkit-transform: scale(1) rotateZ(0);
+    -ms-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+    opacity: 1;
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .zoom-image-out-caption-twist ~ img {  
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+}
+
+/* ----------------------- Image Caption Hover Styles PRO ----------------------- */
+
+.fancy-grid-gallery-wrap .image-caption-box .zoom-image-in-caption-twist {
+    -webkit-transform: scale(5) rotateZ(720deg);
+    transform: scale(5) rotateZ(720deg);
+    opacity: 0
+}
+
+.fancy-grid-gallery-wrap .image-caption-box .zoom-image-in-caption-twist ~ img {
+    display: block;
+    z-index: 0;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);    
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .zoom-image-in-caption-twist {  
+    -webkit-transform: scale(1) rotateZ(0);
+    -ms-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+    opacity: 1;
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .zoom-image-in-caption-twist ~ img {  
+    -webkit-transform: scale(5);
+    -ms-transform: scale(5);
+    transform: scale(5);
+    opacity: 0;
+}
+
+/* ----------------------- Image Caption Hover Styles PRO New Effects ----------------------- */
+
+.fancy-grid-gallery-wrap .image-caption-box .flip-image-vertical,
+.fancy-grid-gallery-wrap .image-caption-box .flip-image-vertical-back,
+.fancy-grid-gallery-wrap .image-caption-box .flip-image-horizontal,
+.fancy-grid-gallery-wrap .image-caption-box .flip-image-horizontal-back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.fancy-grid-gallery-wrap .image-caption-box .flip-image-vertical ~ img,
+.fancy-grid-gallery-wrap .image-caption-box .flip-image-vertical-back ~ img,
+.fancy-grid-gallery-wrap .image-caption-box .flip-image-horizontal ~ img,
+.fancy-grid-gallery-wrap .image-caption-box .flip-image-horizontal-back ~ img {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+/* ----------------------- Image Caption Hover Styles PRO ----------------------- */
+
+.fancy-grid-gallery-wrap .image-caption-box .flip-image-vertical {
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .flip-image-vertical {  
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .flip-image-vertical ~ img {  
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* ----------------------- Image Caption Hover Styles PRO ----------------------- */
+
+.fancy-grid-gallery-wrap .image-caption-box .flip-image-vertical-back {
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .flip-image-vertical-back {  
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .flip-image-vertical-back ~ img {  
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* ----------------------- Image Caption Hover Styles PRO ----------------------- */
+
+.fancy-grid-gallery-wrap .image-caption-box .flip-image-horizontal {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .flip-image-horizontal {  
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .flip-image-horizontal ~ img {  
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* ----------------------- Image Caption Hover Styles PRO ----------------------- */
+
+.fancy-grid-gallery-wrap .image-caption-box .flip-image-horizontal-back {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .flip-image-horizontal-back {  
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.fancy-grid-gallery-wrap .image-caption-box:hover .flip-image-horizontal-back ~ img {  
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.wcp-nav {
+    list-style: none;
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+}
+.wcp-nav li {
+    display: inline-block;
+}
+.wcp-nav li a {
+    text-decoration: none;
+    padding: 6px;
+}
+.wcp-nav li a.active {
+    box-shadow: inset 0 -25px 29px rgba(0,0,0,0.4), 0 0px 2px rgba(0,0,0,2.5);
+    -webkit-box-shadow: inset 0 -25px 29px rgba(0,0,0,0.4), 0 0px 2px rgba(0,0,0,2.5);
+}
